@@ -15,7 +15,7 @@ public class newApi {
 	
 	
 	@GetMapping("/test")
-	public List<Long> testApi() {
+	public String testApi() {
 		
 		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -25,7 +25,7 @@ public class newApi {
 	   List<Long> ids = driver.findElements(By.xpath("//tr[@class='tds']")).stream()
 				.map(element1 -> element1.getAttribute("id")).map(e -> e.substring(4, e.length())).map(e -> Long.parseLong(e))
 				.collect(Collectors.toList());
-		return ids ;
+		return "that bai" ;
 	}
 
 }
