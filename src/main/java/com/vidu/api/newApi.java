@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class newApi {
 	
 	
-	@GetMapping("/test2")
+	@GetMapping("/test3")
 	public String testApi() {
 		
 		System.setProperty("webdriver.chrome.driver","D:\\chromedriver-win64/chromedriver.exe");
