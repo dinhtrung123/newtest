@@ -17,7 +17,7 @@ public class newApi {
 	@GetMapping("/test2")
 	public String testApi() {
 		
-		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","D:\\chromedriver-win64/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
 		driver.get("https://live.nowgoal13.com/");
