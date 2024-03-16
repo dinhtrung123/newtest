@@ -18,7 +18,7 @@ public class newApi {
 //	   List<Long> ids = driver.findElements(By.xpath("//tr[@class='tds']")).stream()
 //				.map(element1 -> element1.getAttribute("id")).map(e -> e.substring(4, e.length())).map(e -> Long.parseLong(e))
 //				.collect(Collectors.toList());
-		return "that bai" ;
+		return "thanh cong" ;
 	}
 
 }
